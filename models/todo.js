@@ -8,6 +8,6 @@ const todoSchema = new mongoose.Schema({
   user: { type: mongoose.Schema.Types.ObjectId, ref: 'User', required: true }
 });
 
-todoSchema.plugin(AutoIncrement, { inc_field: 'todoId' });
+// todoSchema.plugin(AutoIncrement, { inc_field: 'todoId' });
 
 module.exports = mongoose.model('Todo', todoSchema);
